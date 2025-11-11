@@ -1,0 +1,22 @@
+{
+  "name": "homework-4",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "openapi-typescript": "^7.10.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "gh-pages": "^6.3.0"
+  }
+}
