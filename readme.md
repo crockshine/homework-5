@@ -1,6 +1,6 @@
 # Домашнее задание 5
 
-### Демо - (Клик)[https://crockshine.github.io/homework-5/]
+### Демо - [https://crockshine.github.io/homework-5/](Клик)
 
 ## Архитектурное решение
 
