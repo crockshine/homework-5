@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #f6f6f6;
   overflow-x: hidden;
   overflow-y: auto;
@@ -44,7 +44,7 @@ input[type='text'] {
   background: rgba(100, 108, 255, 0.11);
 }
 
-textarea{
+textarea {
   resize: none;
   width: 100%;
   min-height: 80px;
@@ -59,7 +59,7 @@ button:hover {
   opacity: 0.7;
 }
 
-.checkbox{
+.checkbox {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -69,9 +69,9 @@ button:hover {
   padding: 8px 12px;
   border-radius: 8px;
   background: #fff;
-  border: 1px solid  #646cff;
+  border: 1px solid #646cff;
   cursor: pointer;
-  font-size: .8em;
+  font-size: 0.8em;
   width: fit-content;
 }
 
@@ -93,20 +93,20 @@ button:hover {
   gap: 16px;
 }
 
-.checkboxes{
+.checkboxes {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
 
-.search-form{
+.search-form {
   width: 100%;
   display: flex;
   gap: 12px;
   flex-wrap: nowrap;
 }
 
-.task-list{
+.task-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -114,7 +114,7 @@ button:hover {
 
 /*карточка*/
 
-.task{
+.task {
   background: white;
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ button:hover {
   transition: 0.3s;
 }
 
-.task__head-info{
+.task__head-info {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -137,30 +137,31 @@ button:hover {
   align-items: center;
 }
 
-.task:hover{
+.task:hover {
   transform: scale(1.02);
 }
 
-.task__name{
+.task__name {
   line-height: 100%;
 }
 
-.task__info, .task__id{
-  opacity: .2;
+.task__info,
+.task__id {
+  opacity: 0.2;
   line-height: 100%;
 }
 
-.task__empty-item{
+.task__empty-item {
   flex: 1;
 }
 
-.task-statuses{
+.task-statuses {
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
 }
 
-.task-statuses__is-important{
+.task-statuses__is-important {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,7 +173,7 @@ button:hover {
   font-size: 12px;
 }
 
-.task-statuses__is-completed{
+.task-statuses__is-completed {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,7 +187,7 @@ button:hover {
 
 /*левая панель*/
 
-.edit-panel{
+.edit-panel {
   position: sticky;
   top: 32px;
   display: flex;
@@ -194,21 +195,21 @@ button:hover {
   gap: 12px;
 }
 
-.task__switch-state-button{
+.task__switch-state-button {
   background: rgba(0, 179, 3, 0.71);
 }
 
-.task__delete-button{
+.task__delete-button {
   background: rgba(255, 0, 0, 0.71);
 }
 
-.task__edit-button{
+.task__edit-button {
   background: rgba(255, 89, 0, 0.71);
 }
 
 /*форма левой панели*/
 
-.edit-panel__form{
+.edit-panel__form {
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -219,11 +220,10 @@ button:hover {
   border: 1px solid rgba(100, 108, 255, 0.2);
 }
 
-label{
+label {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   user-select: none;
 }
-

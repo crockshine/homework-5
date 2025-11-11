@@ -1,12 +1,11 @@
-import {createTask} from "../main.ts";
+import { createTask } from '@/main';
 
+export const renderCreateForm = (): void => {
+  const createFormElement = document.createElement('form');
+  createFormElement.className = 'edit-panel__form';
+  createFormElement.id = 'create-form';
 
-export const renderCreateForm = () => {
-    const createFormElement = document.createElement('form');
-    createFormElement.className = 'edit-panel__form';
-    createFormElement.id = 'create-form';
-
-    createFormElement.innerHTML = `
+  createFormElement.innerHTML = `
             <h2>Создание</h2>
             <label for="name">
                 Название задачи *
@@ -27,10 +26,10 @@ export const renderCreateForm = () => {
             </button>
     `;
 
-    createFormElement?.addEventListener('submit', createTask)
+  createFormElement?.addEventListener('submit', createTask);
 
-    // подставить новую форму
-    const editPanel = document.getElementById('edit-panel')
-    if (editPanel) editPanel.innerHTML = ''
-    editPanel?.appendChild(createFormElement);
-}
+  // подставить новую форму
+  const editPanel = document.getElementById('edit-panel');
+  if (editPanel) editPanel.innerHTML = '';
+  editPanel?.appendChild(createFormElement);
+};

@@ -1,2 +1,2 @@
-export * from './task.ts'
-export * from './task-api.ts'
+export * from './task';
+export * from './task-api';

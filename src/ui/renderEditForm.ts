@@ -1,14 +1,13 @@
-import type {Task} from "@/types";
-import {updateTask} from "../main.ts";
-import {renderCreateForm} from "./renderCreateForm.ts";
+import type { Task } from '@/types';
+import { updateTask } from '@/main';
+import { renderCreateForm } from '@/ui/renderCreateForm';
 
+export const renderEditForm = (selectedTask: Task): void => {
+  const editFormElement = document.createElement('form');
+  editFormElement.className = 'edit-panel__form';
+  editFormElement.id = 'edit-form';
 
-export const renderEditForm = (selectedTask: Task) => {
-    const editFormElement = document.createElement('form');
-    editFormElement.className = 'edit-panel__form';
-    editFormElement.id = 'edit-form';
-
-    editFormElement.innerHTML = `
+  editFormElement.innerHTML = `
             <h2>Редактирование</h2>
 
         <label for="name">
@@ -30,13 +29,13 @@ export const renderEditForm = (selectedTask: Task) => {
         </button>
     `;
 
-    editFormElement?.addEventListener('submit', async (e) => {
-        await updateTask(e, editFormElement, selectedTask);
-        renderCreateForm()
-    })
+  editFormElement?.addEventListener('submit', async (e) => {
+    await updateTask(e, editFormElement, selectedTask);
+    renderCreateForm();
+  });
 
-    // подставить новую форму
-    const editPanel = document.getElementById('edit-panel')
-    if (editPanel) editPanel.innerHTML = ''
-    editPanel?.appendChild(editFormElement);
-}
+  // подставить новую форму
+  const editPanel = document.getElementById('edit-panel');
+  if (editPanel) editPanel.innerHTML = '';
+  editPanel?.appendChild(editFormElement);
+};
